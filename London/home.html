@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cities Layout</title>
+<style>
+  /* Reset some defaults */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f9fafb;
+    color: #333;
+  }
+
+  .header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .container {
+    display: flex;
+    min-height: 500px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .sidebar {
+    background-color: #34495e;
+    padding: 30px 20px;
+    width: 220px;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background-color: #2980b9;
+  }
+
+  .main {
+    flex-grow: 1;
+    padding: 40px 30px;
+    background-color: #fdfdfd;
+    color: #2c3e50;
+  }
+
+  .main h2 {
+    margin-top: 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 10px;
+  }
+
+  .main p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-top: 50px;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      margin: 20px;
+      min-height: auto;
+    }
+
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 15px 10px;
+    }
+
+    .sidebar a {
+      padding: 8px 10px;
+      font-size: 0.9em;
+    }
+
+    .main {
+      padding: 25px 15px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Cities
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="home.html">London</a>
+    <a href="paris.html">Paris</a>
+    <a href="tokyo.html">Tokyo</a>
+  </div>
+
+  <div class="main">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Cities Info. All rights reserved.
+</div>
+
+</body>
+</html>
